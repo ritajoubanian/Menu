@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-  background-image: url('/menu img/background.webp');
+  background-image: url('menu img/background.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -174,7 +174,7 @@ footer {
 }
 
 body.dessert_page {
-  background-image: url('/menu img/background.webp');
+  background-image: url('menu img/background.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
