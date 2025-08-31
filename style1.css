@@ -326,7 +326,6 @@ h1 {
   font-weight: bold;
   font-size: 1.3rem;
   color: #4caf50;/* green price highlight */
-  background-color: #e8f5e9;
   padding: 5px 12px;
   border-radius: 12px;
 }
@@ -369,7 +368,6 @@ h1 {
   font-weight: bold;
   font-size: 1.3rem;
   color: #4caf50;/* green price highlight */
-  background-color: #e8f5e9;
   padding: 5px 12px;
   border-radius: 12px;
 }
@@ -568,7 +566,7 @@ h1 {
 
   /* Fix top space */
   .title {
-    margin-top: 5px; /* smaller space on top */
+    margin-top: 10px; /* smaller space on top */
   }
 
   header h1 {
@@ -790,10 +788,22 @@ h1 {
 
 @media screen and (max-width: 700px) {
   .drinks-section {
- margin-bottom: 10rem;
+    margin-bottom: 2rem;
   }
-   .back-linD{
+
+  .back-linD {
     display: none;
   }
 
+  .drinks-grid {
+    grid-template-columns: repeat(2, 1fr); /* keep 2 columns */
+    grid-template-rows: repeat(2, min-content); /* keep 2 rows */
+    gap: 7px; /* very small gap between cards */
+  }
+
+  .drink-card img {
+    width: 9rem; /* optional: slightly smaller to fit tight gap */
+    height: 7.5rem;
+    object-fit: cover;
+  }
 }
