@@ -614,141 +614,105 @@ h1 {
   }
 }
 
-/* Phones (up to 500px) */
-@media (max-width: 700px) {
+/* 📱 Mobile Responsive Design (2 columns x 2 rows with proper gap) */
+@media (max-width: 600px) {
+  .main_courses {
+    padding-top: 1.5rem;
+    text-align: center;
+  }
+
   .menu-container {
-    margin-top: 2rem;  /* reduce space above the grid */
-    padding: 20px;     /* optional: reduce padding a bit */
-    gap: 15px;         /* optional: smaller gap between items */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+    gap: 20px; /* nice gap between items */
+    margin-top: 3rem;
+    padding: 15px;
   }
 
   .menu-item {
-    width: 45%;        /* keep items responsive in 2 per row */
+    width: 100%;   /* ✅ override fixed 220px */
+    padding: 10px;
+    box-sizing: border-box; /* ensure padding doesn’t break layout */
   }
 
-  header.main_courses h1 {
-    font-size: 3rem;   /* smaller heading */
+  .menu-item img {
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    width: 100%; /* ✅ fill the column space */
+  }
+
+  .menu-item h3 {
+    font-size: 1rem;
+  }
+
+   .back-link {
+    display: none;
   }
 }
-/* ------------------ MEDIA QUERY: SMALL SCREENS (≤700px) ------------------ */
-@media screen and (max-width: 700px) {
-  h1 {
-    font-size: 2rem;
-    text-align: center;
-  }
 
+/* 📱 Mobile Responsive Design: 2 columns for small phones */
+@media (max-width: 600px) {
   .dessert-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;  /* 2 columns */
-    gap: 15px;
-    max-width: 400px;
-    margin: 0 auto 6rem auto;       /* center grid & leave bottom space */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 15px; /* space between items */
+    justify-items: center;
+    margin-bottom: 5rem;
   }
 
   .dessert-grid a {
-    flex: unset;                     /* remove flex rules from original */
+    width: 100%;
+    max-width: 160px; /* keeps cards uniform */
     height: auto;
-    padding: 15px;
+    padding: 12px;
     display: flex;
     flex-direction: column;
-    align-items: center;             /* center content */
+    justify-content: flex-start;
+    align-items: center; /* ✅ centers image and text */
   }
 
   .dessert-grid img {
-    width: 130px;
-    height: 130px;
+    width: 100px;
+    height: 100px;
     margin-bottom: 10px;
-    display: block;
-    border-radius: 50%;
   }
 
   .dessert-grid p {
+    font-size: 0.9rem;
     text-align: center;
+  }
+
+  .prices {
     font-size: 0.95rem;
-    line-height: 1.4;
-  }
-
-  .prices {
-    font-size: 1rem;
-    padding: 4px 10px;
-    text-align: center;
   }
 
   .back-line {
-    position: fixed;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 100;
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .back-line a {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 0.85rem;
   }
 }
 
-/* ------------------ MEDIA QUERY: MEDIUM SCREENS (701px–1000px) ------------------ */
-@media screen and (min-width: 701px) and (max-width: 1000px) {
-  h1 {
-    font-size: 3rem;
-    text-align: center;
-  }
-
-  .dessert-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);  /* 3 columns */
-    gap: 20px;
-    max-width: 800px;
-    margin: 0 auto 6rem auto;
-  }
-
-  .dessert-grid a {
-    flex: unset;
-    height: 300px;
-    padding: 18px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .dessert-grid img {
-    width: 160px;
-    height: 160px;
-    margin-bottom: 10px;
-    display: block;
-    border-radius: 50%;
-  }
-
-  .dessert-grid p {
-    text-align: center;
-    font-size: 1rem;
-    line-height: 1.4;
-  }
-
-  .prices {
-    font-size: 1.1rem;
-    padding: 5px 12px;
-    text-align: center;
-  }
-
+/* Hide back button on very small screens */
+@media (max-width: 400px) {
   .back-line {
-    position: fixed;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 100;
+    display: none;
   }
 }
+
 
 @media screen and (max-width: 700px) {
   .drinks-section {
  margin-bottom: 10rem;
   }
 
-.back-linD {
-  position: fixed;       
-  bottom: 15px;         
-  left: 5rem;  
-  margin-top: 7rem;         
-  transform: translateX(-50%);  /* truly center horizontally */
-  z-index: 1000;          /* stay above other content */
-  /* padding: 10px 18px;  */
-  
+  .back-link {
+    display: none;
   }
 }
