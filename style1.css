@@ -395,15 +395,20 @@ h1 {
 }
 
 .fish-item h2 {
+  font-size: 1.5rem;
   color: green;
+  margin: 0 0 0.5rem 0;
   display: flex;
   justify-content: space-between;
-  margin: 0;
+  align-items: center;
 }
 
 .fish-item .price {
   color: #4caf50;
   font-weight: bold;
+  font-size: 1.3rem;
+  padding: 5px 12px;
+  border-radius: 12px;
 }
 
 .fish-item p {
@@ -431,15 +436,20 @@ h1 {
 }
 
 .burger-item h2 {
+  font-size: 1.5rem;
   color: green;
+  margin: 0 0 0.5rem 0;
   display: flex;
   justify-content: space-between;
-  margin: 0;
+  align-items: center;
 }
 
 .burger-item .price {
   color: #4caf50;
   font-weight: bold;
+  font-size: 1.3rem;
+  padding: 5px 12px;
+  border-radius: 12px;
 }
 
 .burger-item p {
