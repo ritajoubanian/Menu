@@ -507,11 +507,10 @@ h1 {
 }
 
 .price {
-  color: rgb(15, 101, 15);
+  font-size: 1.2rem;
   font-weight: bold;
-  margin-top: 0.5rem; /* optional spacing from paragraph */
-  margin-left: 0.5rem;
-  font-size: 1.1em;
+  color: rgba(0, 77, 40, 0.6);
+  padding: 5px 12px;
 }
 
 .drink-card p {
