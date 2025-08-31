@@ -629,7 +629,7 @@ h1 {
 /* Phone screens */
 @media (max-width: 700px) {
   .container_app {
-    margin-top: 2rem; /* less top space */
+    margin-top: 6rem; /* less top space */
   }
 
   .appetizer-list p {
@@ -687,104 +687,60 @@ h1 {
     display: none;
   }
 }
-
-/* ------------------ MEDIA QUERY: SMALL SCREENS (≤700px) ------------------ */
 @media screen and (max-width: 700px) {
   h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;   
     text-align: center;
+    margin-top: 0.5rem;    
   }
 
   .dessert-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;  /* 2 columns */
-    gap: 15px;
-    max-width: 400px;
-    margin: 0 auto 6rem auto;       /* center grid & leave bottom space */
-  }
-
-  .dessert-grid a {
-    flex: unset;                     /* remove flex rules from original */
-    height: auto;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;             /* center content */
-  }
-
-  .dessert-grid img {
-    width: 130px;
-    height: 130px;
-    margin-bottom: 10px;
-    display: block;
-    border-radius: 50%;
-  }
-
-  .dessert-grid p {
-    text-align: center;
-    font-size: 0.95rem;
-    line-height: 1.4;
-  }
-
-  .prices {
-    font-size: 1rem;
-    padding: 4px 10px;
-    text-align: center;
-  }
-
-  .back-line {
-    display: none;
-  }
-}
-
-/* ------------------ MEDIA QUERY: MEDIUM SCREENS (701px–1000px) ------------------ */
-@media screen and (min-width: 701px) and (max-width: 1000px) {
-  h1 {
-    font-size: 3.5rem;
-    text-align: center;
-  }
-
-  .dessert-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);  /* 3 columns */
-    gap: 20px;
-    max-width: 800px;
-    margin: 0 auto 6rem auto;
-  }
-
-  .dessert-grid a {
-    flex: unset;
-    height: 300px;
-    padding: 18px;
-    display: flex;
-    flex-direction: column;
+    gap: 12px;                       /* small gap */
+    justify-content: center;         /* center the grid */
     align-items: center;
+    max-width: 360px;                /* keep it narrow */
+    margin: 0 auto;                  /* equal space left & right */
+    padding: 0;
+  }
+
+  .dessert-grid a {
+    width: 140px;        /* 🔹 smaller box */
+    height: 180px;       /* 🔹 smaller height */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center content horizontally */
+    justify-content: center; /* center content vertically */
+    text-align: center;
   }
 
   .dessert-grid img {
-    width: 160px;
-    height: 160px;
-    margin-bottom: 10px;
-    display: block;
+    width: 90px;     /* 🔹 smaller image */
+    height: 90px;
+    margin-bottom: 8px;
     border-radius: 50%;
+    display: block;
   }
 
   .dessert-grid p {
-    text-align: center;
-    font-size: 1rem;
-    line-height: 1.4;
+    font-size: 0.85rem;  
+    line-height: 1.3;
+    margin: 0;
   }
 
   .prices {
-    font-size: 1.1rem;
-    padding: 5px 12px;
-    text-align: center;
+    font-size: 0.9rem;
+    padding: 3px 8px;
   }
 
   .back-line {
     display: none;
   }
 }
+
+
 
 @media screen and (max-width: 700px) {
   .drinks-section {
