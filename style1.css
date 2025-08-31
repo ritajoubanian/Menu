@@ -697,13 +697,14 @@ h1 {
   .dessert-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;  /* 2 columns */
-    gap: 8px;                       /* small gap */
+    column-gap: 1px;                  /* very small space between columns */
+    row-gap: 8px; 
     justify-content: center;         /* center the grid */
     align-items: center;
     max-width: 360px;                /* keep it narrow */
     margin: 0 auto;                  /* equal space left & right */
     padding: 0;
-    transform: translateX(-15px);
+    transform: translateX(-13px);
 
   }
 
@@ -752,7 +753,7 @@ h1 {
   .back-linD {
     display: none;
   }
-  
+
    h1 {
     font-size: 3.5rem;   /* make title bigger */
     margin-top: 2.5rem;  /* push it a little down */
