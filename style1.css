@@ -200,7 +200,7 @@ h1 {
 }
 
 .dessert-grid a {
-  background-color: rgba(165, 214, 167, 0.9); /* light green */
+ 
   color: #1b3a2a;
   border-radius: 15px;
   text-align: center;
@@ -497,12 +497,6 @@ h1 {
   margin-bottom: 10px;
 }
 
-.drink-card h2 {
-  font-size: 1.2em;
-  margin: 5px 0;
-  color: rgb(15, 101, 15);
-}
-
 .price {
   color: rgb(15, 101, 15);
   font-weight: bold;
@@ -512,8 +506,14 @@ h1 {
 }
 
 .drink-card p {
+  font-weight: bold;
   font-size: 0.9em;
-  color: green;
+  color: black;
+  flex-grow: 1;
+  margin-bottom: 10px;
+  text-align: left;   /* ✅ Align text to the left */
+  line-height: 1.4;   /* ✅ Better spacing between lines */
+  word-wrap: break-word;
 }
 
 .back-link {
